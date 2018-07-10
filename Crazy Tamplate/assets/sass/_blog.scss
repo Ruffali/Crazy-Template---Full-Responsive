@@ -1,0 +1,201 @@
+$myColorRGBA: linear-gradient(to right, #d382126b, #a8327977);
+#blog{
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                   
+                    margin-top: 8%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: black;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "BLOG";
+                            position: absolute;
+                            color: #b6b6b64d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 57%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: rgb(136, 22, 22);
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        width: 70%;
+                        padding-top: 3%;
+                        padding-bottom: 5%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-4{
+                .blogCol{
+                    background: white;
+                    border: 1px solid rgb(212, 212, 212);
+                    padding: 0.5%;
+                    overflow: hidden;
+                    .blogPhoto{
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 0%;
+                            height: 300px;
+                            background: $myColorRGBA;
+                            top: 0%;
+                            left: 0%;
+                            transition: all 0.3s linear;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 0%;
+                            height: 300px;
+                            background: linear-gradient(to left, #d382126b, #a8327977);
+                            top: 0%;
+                            right: 0%;
+                            transition: all 0.3s linear;
+                        }
+                        img{
+                            width: 100%;
+                            height: 300px;
+                        }
+                    }
+                    .content{
+                        padding: 2%;
+                        h1{
+                            font-size: 3ch;
+                        }
+                        p{
+                            font-size: 1.5ch;
+                            color: rgb(136, 22, 22);
+                            span{
+                                padding-right: 2%;
+                                &:nth-child(2){
+                                    padding-left: 2%;
+                                }
+                            }
+                        }
+                    }
+                    .longContent{
+                        padding-top: 4%;
+                        p{
+                            padding-bottom: 15%;
+                            border-bottom: 1px dashed #ccc;
+                        }
+                    }
+                    .row{
+                        .col-md-7{
+                            .click{
+                                p{
+                                    color: black;
+                                    font-size: 1.6ch;
+                                    cursor: pointer;
+                                    span{
+                                        transition: all 0.4s ease-out;
+                                    }
+                                }
+                            }
+                        }
+                        .col-md-5{
+                            text-align: center;
+                            .button{
+                            margin-top: -5%;
+                               button{
+                                   position: relative;
+                                    padding: 5%;
+                                    padding-left: 15%;
+                                    padding-right: 15%;
+                                    border: 1px dashed rgb(136, 22, 22);
+                                    background: linear-gradient(to right, #d38212, #a83279);
+                                    color: white;
+                                    border-radius: 18px;
+                                    outline: none;
+                                    cursor: pointer;
+                                    &::before{
+                                        position: absolute;
+                                        content: "";
+                                        width: 0%;
+                                        height: 34px;
+                                        top: -1%;
+                                        left: -1%;
+                                        background: black;
+                                        transition: all 0.3s linear;
+                                        border-radius: 18px;
+                                        transition: all 0.4s linear;
+                                        transform: scale(0.8);
+                                        opacity: 0;
+                                    }
+                                    span{
+                                        position: absolute;
+                                        display: none;
+                                        color: white;
+                                        transition: all 0.4s linear;
+                                    }
+                                    &:hover:before{
+                                        transform: scale(1.1);
+                                        width: 102%;
+                                        opacity: 1;
+                                    }
+                                    &:hover span{
+                                        display: block;
+                                    }
+                               }
+                            }
+                        }
+                    }
+                } 
+                &:hover .blogCol .row .col-md-7 .click p span{
+                    color: red;
+                }
+                &:hover .blogCol .blogPhoto:before{
+                    width: 50%;
+                }
+                &:hover .blogCol .blogPhoto:after{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

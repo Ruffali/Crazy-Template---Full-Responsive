@@ -1,0 +1,205 @@
+#pricing{
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: black;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "PRICING";
+                            position: absolute;
+                            color: #b6b6b64d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 57%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: rgb(136, 22, 22);
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        width: 70%;
+                        padding-top: 3%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-3{
+                .main{
+                    position: relative;
+                    text-align: center;
+                    padding: 5%;
+                    border-radius: 5px;
+                    box-shadow: -2px 2px 14px 3px #888888;
+                    transition: all 0.3s linear;
+                    margin-top: 15%;
+                    h1{
+                        font-size: 2ch;
+                        margin-bottom: 15%;
+                    }
+                    .row{
+                        .col-md-12{
+                            .pricingDiv{
+                                color: rgb(136, 22, 22);
+                                padding-top: 5%;
+                                span{
+                                    font-size: 8ch;
+                                    position: relative;
+                                    &::before{
+                                        content: "\f155";
+                                        font-family: FontAwesome;
+                                        position: absolute;
+                                        top: 17%;
+                                        left: -6%;
+                                        font-size: 0.2ch;
+                                    }
+                                }
+                                h1{
+                                    display: inline-block;
+                                }
+                            }
+                            .membership{
+                                h1{
+                                    padding-bottom: 15%;
+                                }
+                            }
+                            .firstContent, .secondContent, .thirdContent, .fourthContent{
+                                h1{
+                                font-size: 1.6ch;
+                                position: relative;
+                                    &::before{
+                                        position: absolute;
+                                        content: "";
+                                        bottom: -80%;
+                                        left: 5%;
+                                        width: 90%;
+                                        height: 2px;
+                                        border-bottom: 1px dashed rgb(204, 200, 200);
+                                    }
+                                }
+                            }
+                            .button{
+                                margin-top: 10%;
+                                margin-bottom: 10%;
+                               button{
+                                   position: relative;
+                                    padding: 5%;
+                                    padding-left: 15%;
+                                    padding-right: 15%;
+                                    border: 1px dashed rgb(136, 22, 22);
+                                    background: white;
+                                    color: rgb(136, 22, 22);
+                                    border-radius: 0px;
+                                    &::before{
+                                        border-radius:10px;
+                                        position: absolute;
+                                        content: "";
+                                        width: 0%;
+                                        height: 49px;
+                                        top: -1%;
+                                        left: -1%;
+                                        background: linear-gradient(to right, rgba(211, 130, 18, 0.8),rgba(168, 50, 121, 0.8));
+                                        transition: all 0.3s linear;
+                                        border-radius: 0px;
+                                        transition: all 0.4s linear;
+                                    }
+                                    span{
+                                        position: absolute;
+                                        display: none;
+                                         color: white;
+                                        transition: all 0.4s linear;
+                                    }
+                                    &:hover:before{
+                                        width: 102%;
+                                    }
+                                    &:hover span{
+                                        display: block;
+                                    }
+                               }
+                            }
+                        }
+                        .thirdPrice{
+                            background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                            .pricingDiv{
+                                color: white;
+                            }
+                        }
+                    } 
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        width: 100%;
+                        height: 4px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0%;
+                        left: 0%;
+                        width: 0%;
+                        height: 4px;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                        transition: all 0.6s linear;
+                    }
+                    &:hover:after{
+                        width: 100%;
+                    }
+                    &:hover{
+                    box-shadow: -2px 2px 26px 7px #888888;
+                    transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,77 @@
+#navbar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  nav{ 
+      a{
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+          img{
+            width: 33%;
+          }
+      }
+      .navbar-collapse{
+          ul{
+              li{
+                padding-right: 1%;
+                margin-left:4%;
+                transition: all 1s ease;
+                position: relative;
+                  a{
+                    color: white;
+                    text-transform: uppercase;
+                  }
+                  &:nth-child(1){
+                    margin-left: -20%;
+                }
+                &:hover{
+                    background: white;
+                }
+                &:hover a{
+                    color: black;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 57%;
+                    left: 0%;
+                    width: 16%;
+                    height: 11px;
+                    border-bottom: 1.51px solid white;
+                    border-left: 1.5px solid white;
+                    opacity: 0;
+                    transition: all 1s ease;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 5%;
+                    left: 82%;
+                    width: 16%;
+                    height: 11px;
+                    border-top: 1.5px solid white;
+                    border-right: 1.5px solid white;
+                    opacity: 0;
+                    transition: all 1s ease;
+                }
+                &:hover:before{
+                    top: 88%;
+                    left: -14%;
+                    opacity: 1;
+                }
+                &:hover:after{
+                    top: -31%;
+                    left: 101%;
+                    opacity: 1;
+                }
+              }
+          }
+      }
+    } 
+}
+.actives{
+    color: rgb(214, 66, 66)!important;
+    transition: all 0.4s ease-in;
+}

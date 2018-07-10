@@ -1,0 +1,184 @@
+#service{
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to right, rgba(211, 130, 18, 0.8),rgba(168, 50, 121, 0.8)),url(../image/backgroundImages/serviceBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: white;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "SERVICES";
+                            position: absolute;
+                            color: #ffffff4d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: white;
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 58%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: white;
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        color: white;
+                        width: 70%;
+                        padding-top: 3%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-4{
+                .serviceDiv{
+                    background-color: white;
+                    margin-bottom: 6%;
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+                    .row{
+                        .col-md-5{
+                            text-align: center;
+                            .icon{
+                            position: relative;
+                            width: 70%;
+                            margin:  0 auto;
+                            margin-top: 10%;
+                            height: 80px;
+                            line-height: 80px;
+                            border-left: 1px solid #881616;
+                            border-right: 1px solid #881616;
+                                .fonawesomeIcon{
+                                position: relative;
+                                    i{
+                                        font-size: 3ch;
+                                        color: #881616;
+                                    }
+                                    &::before{
+                                        content: "";
+                                        position: absolute;
+                                        width: 16%;
+                                        height: 1px;
+                                        background-color: #881616;
+                                        bottom: -1%;
+                                        left: 0%;
+                                        transition: all 0.4s linear;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        position: absolute;
+                                        width: 16%;
+                                        height: 1px;
+                                        background-color: #881616;
+                                        bottom: -1%;
+                                        right: 0%;
+                                        transition: all 0.4s linear;
+                                    }
+                                }
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 16%;
+                                    height: 1px;
+                                    background-color: #881616;
+                                    top: -1%;
+                                    left: 0%;
+                                    transition: all 0.4s linear;
+                                }
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    width: 16%;
+                                    height: 1px;
+                                    background-color: #881616;
+                                    top: -1%;
+                                    right: 0%;
+                                    transition: all 0.4s linear;
+                                }
+                            }
+                        }
+                        .col-md-7{
+                            .content{
+                                margin-left: -15%;
+                                color: #881616;
+                                padding-top: 5%;
+                                padding-bottom: 5%;
+                                h1{
+                                    font-size: 2ch;
+                                    position: relative;
+                                    &:before{
+                                        content: "";
+                                        position: absolute;
+                                        bottom: -20%;
+                                        left: 0%;
+                                        width: 28%;
+                                        height: 1px;
+                                        background: #881616;
+                                        transition: all 0.4s linear;
+                                    }
+                                }
+                                p{
+                                    color: black;
+                                    padding-top: 5%;
+                                    font-size: 1.2ch;
+                                }
+                                
+                            }
+                        }
+                    }
+                    &:hover .row .col-md-5 .icon:before{
+                        width: 100%;
+                    }
+                    &:hover .row .col-md-5 .icon .fonawesomeIcon:after{
+                        width: 100%;
+                    }
+                    &:hover .row .col-md-7 h1:before{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

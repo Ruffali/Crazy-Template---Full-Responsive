@@ -1,0 +1,162 @@
+#testimonials{
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to right, rgba(211, 130, 18, 0.8),rgba(168, 50, 121, 0.8)),url(../image/backgroundImages/testimonialsPhoto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: white;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "testimonials";
+                            position: absolute;
+                            text-transform: uppercase;
+                            color: #ffffff4d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: white;
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 58%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: white;
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        color: white;
+                        width: 70%;
+                        padding-top: 3%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+        }
+        .row{
+            .col-md-12{
+            .item{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                color: white;
+                h1{
+                    padding-top: 1%;
+                    padding-bottom: 5%;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        cursor: pointer;
+                        top: 31%;
+                        left: 41%;
+                        width: 2%;
+                        height: 2px;
+                        background: white;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        cursor: pointer;
+                        top: 31%;
+                        right: 41%;
+                        width: 2%;
+                        height: 2px;
+                        background: white;
+                    }
+                }
+                p{
+                    margin: 0 auto;
+                    width: 70%;
+                    margin-bottom: 3%;
+                }
+                }
+                .owl-carousel .item  img {
+                    vertical-align: middle;
+                    border-style: none;
+                    width: 15%;
+                    border-radius: 50%;
+                    height: 140px;
+                    border: 2px solid white;
+                    margin: 0 auto;
+                }
+                .customNextBtn{
+                position: absolute;
+                top: 45%;
+                right: 7%;
+                font-size: 40px;
+                z-index: 222;
+                cursor: pointer;
+                opacity: 0.5;
+                color: white; 
+                }
+                .customPrevBtn{
+                position: absolute;
+                top: 45%;
+                left: 7%;
+                z-index: 222;
+                font-size: 40px;
+                cursor: pointer;
+                opacity: 0.5;
+                color: white; 
+                }
+                .owl-dots span{
+                // display: none;
+                // width: 51px!important;
+                // height: 4px!important;
+                width: 61px;
+                height: 4px;
+                cursor: pointer;
+                } 
+            }
+        }
+    }
+}
+// @media  screen and (min-width: 320px) and (max-width: 767px){
+//     #coursel{
+//         .item{
+//         height: 560px!important;
+//         }
+//     }
+// }

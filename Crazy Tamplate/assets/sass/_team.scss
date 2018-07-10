@@ -1,0 +1,199 @@
+#team{
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to right, rgba(211, 130, 18, 0.8),rgba(168, 50, 121, 0.8)),url(../image/backgroundImages/team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    margin-bottom: 5%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: white;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "OUR TEAM";
+                            position: absolute;
+                            color: #ffffff4d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: white;
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 58%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: white;
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        color: white;
+                        width: 70%;
+                        padding-top: 3%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-4{
+                    .teamCol{
+                        overflow: hidden;
+                        background: white;
+                        border-radius: 5px;
+                        text-align: center;
+                        border: 15px solid white;
+                    .team{
+                        padding-top: 5%;
+                        padding-bottom: 5%;
+                        p{
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: "";
+                                width: 0%;
+                                height: 2px;
+                                background: linear-gradient(to right, #d38212, #a83279);
+                                bottom: -20%;
+                                left: 20%;
+                                transition: all 0.5s linear;
+                            }
+                        }
+                        h1{
+                            color: #881616;
+                        }
+                    }
+                    .myPhoto{
+                        position: relative;
+                        img{
+                            width: 100%;
+                            transition: all 0.4s linear;
+                        }
+                        .iconsDiv{
+                            position: absolute;
+                            padding-left: 2%;
+                            left: -20%;
+                            transition: all 0.6s linear;
+                            .icon{
+                                margin-top: 30%;
+                                position: relative;
+                                border-top: 1px solid rgb(136, 22, 22);
+                                border-bottom: 1px solid rgb(136, 22, 22);
+                                width: 100%;
+                                padding: 14%;
+                                cursor: pointer;
+                                .fontAwesomeIcon{
+                                    padding: 20%;
+                                    position: relative;
+                                        i{
+                                        // padding: 20% 10%;
+                                        font-size: 2ch;
+                                        color: rgb(136, 22, 22);
+                                        transition: all 0.4s linear;
+                                        }
+                                        &::before{
+                                            content: "";
+                                            position: absolute;
+                                            width: 3%;
+                                            height: 9px;
+                                            background-color: #881616;
+                                            top: -18%;
+                                            left: -20%;
+                                            transition: all 0.4s linear;
+                                        }
+                                        &::after{
+                                            content: "";
+                                            position: absolute;
+                                            width: 3%;
+                                            height: 9px;
+                                            background-color: #881616;
+                                            top: -18%;
+                                            right: -22%;
+                                            transition: all 0.4s linear;
+                                        }
+                                    }  
+                                    &::before{
+                                        content: "";
+                                        position: absolute;
+                                        width: 3%;
+                                        height: 9px;
+                                        background-color: #881616;
+                                        bottom: -2%;
+                                        left: -1%;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        position: absolute;
+                                        width: 3%;
+                                        height: 9px;
+                                        background-color: #881616;
+                                        bottom: -2%;
+                                        right: -1%;
+                                        transition: all 0.4s linear;
+                                    }
+                                    &:hover{
+                                        background: linear-gradient(to right, #d38212, #a83279);
+                                    }
+                                    &:hover .fontAwesomeIcon i{
+                                        color: white;
+                                    }
+                                }
+                                &:hover .icon:after{
+                                    height: 57px;
+                                }
+                                &:hover .icon .fontAwesomeIcon:before{
+                                    height: 57px;
+                                }
+                            }
+                        }
+                    } 
+                    &:hover .team p:before{
+                        width: 60%;
+                    }
+                    &:hover .myPhoto img{
+                        margin-right: -90%;
+                    }
+                    
+                    &:hover .myPhoto .iconsDiv{
+                        left: 10%;
+                    }
+                }
+            }
+        }
+}

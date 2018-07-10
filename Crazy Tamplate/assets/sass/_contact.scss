@@ -1,0 +1,258 @@
+$myColorRGB: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+#contact{
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: black;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "contact";
+                            position: absolute;
+                            color: #b6b6b64d;
+                            text-transform: uppercase;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 57%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: rgb(136, 22, 22);
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        width: 70%;
+                        padding-top: 3%;
+                        padding-bottom: 5%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-8{
+                .form-contact{
+                    form{
+                        .form-group{
+                            input, textarea{
+                                border: 0.5px solid #d38212;
+                                box-shadow: #a83279fa 0px 0px 3px 1px;
+                                &:focus{
+                                    box-shadow: #d38212 0px 0px 3px 1px;
+                                    border: 0.5px solid #a83279fa;
+                                }
+                            }
+                        }
+                        .input{
+                            input{
+                                background: $myColorRGB;
+                                color: white;
+                                transition: all 0.6s linear;
+                            }
+                            position: relative;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                top: 0%;
+                                left: 0%;
+                                width: 0%;
+                                height: 37px;
+                                background: black;
+                                transition: all 0.4s linear;
+                            }
+                            &::after{
+                                content:"";
+                                position: absolute;
+                                top: 0%;
+                                right: 0%;
+                                width: 0%;
+                                height: 37px;
+                                background: black;
+                                transition: all 0.4s linear;
+                            }
+                            &:hover input{
+                                background: black;
+                                border: black
+                            }
+                            &:hover:before{
+                                width: 42%;
+                            }
+                            &:hover:after{
+                                width: 42%;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-4{
+                .iconsInfo{
+                    text-align: center;
+                    width: 100%;
+                    .hoverEffect{
+                    position: relative;
+                    border-top: 1px solid #881616;
+                    border-bottom: 1px solid #881616;
+                    margin-top: 6%;
+                    width: 17%;
+                    transition: all 0.6s ease-in;
+                    cursor: pointer;
+                        i{
+                            padding: 15% 8%;
+                            font-size: 2.8ch;
+                            color: #881616;
+                            transition: all 0.6s ease-in;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0%;
+                            left: 0%;
+                            width: 2%;
+                            height: 8px;
+                            background: #881616;
+                            transition: all 0.4s linear;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            top: 0%;
+                            right: 0%;
+                            width: 2%;
+                            height: 8px;
+                            background: #881616;
+                        }
+                        .line{
+                        position: relative;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0%;
+                                left: 0%;
+                                width: 2%;
+                                height: 8px;
+                                background: #881616;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 0%;
+                                right: 0%;
+                                width: 2%;
+                                height: 8px;
+                                background: #881616;
+                                transition: all 0.4s linear;
+                            }
+                        }
+                        &:hover i{
+                            color: white;
+                        }
+                        &:hover{
+                            background: $myColorRGB;
+                        }
+                        &:hover:before{
+                            height: 48px;
+                        }
+                        &:hover  .line:after{
+                            height: 48px;
+                        }
+                    }
+                    p{
+                        text-align: left;
+                        padding-top: 2%;
+                        transition: all 0.4s linear;
+                    }
+                    &:hover p{
+                        color: #881616;
+                    }
+                }
+            }
+            .col-md-12{
+                .subscirebe{
+                    padding-top: 15%;
+                    text-align: center;
+                    h1{
+                        font-size: 3ch;
+                        font-weight: bold;
+                    }
+                    .send{
+                        padding-top: 5%;
+                        input{
+                            width: 20%;
+                            display: inline-block;
+                            box-shadow: white 0px 0px 3px 1px;
+                            border: 0.5px solid white;
+                            &:nth-child(2){
+                                text-transform: uppercase;
+                                font-size: 2ch;
+                                background: $myColorRGB;
+                                width: 15%;
+                                color: white;
+                                border-top-right-radius: 30px;
+                                border-bottom-right-radius: 30px;
+                                cursor: pointer;
+                                transition: all 2s linear;
+                                &:hover{
+                                    background: black;
+                                    color: white;
+                                }
+                            }
+                            &:focus{
+                                box-shadow: white 0px 0px 3px 1px;
+                                border: 0.5px solid white;
+                            }
+                        }
+                    }
+                    .content{
+                        color: black;
+                        padding-top: 5%;
+                        font-size: 1.8ch;
+                        p{
+                            display: inline-block;
+                            padding-right: 2%;
+                            letter-spacing: 0.3ch;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

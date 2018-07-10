@@ -1,0 +1,175 @@
+#about{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5%;
+    .container{
+        .row{
+            .col-md-12{
+                .upper{
+                    margin-top: 8%;
+                    .headerContent{
+                        h1{
+                            position: relative;
+                            color: black;
+                            font-size: 5ch;
+                            text-transform: uppercase;
+                            &::before{
+                            content: "About Us";
+                            position: absolute;
+                            color: #b6b6b64d;
+                            width: 100%;
+                            height: 100px;
+                            top: -38%;
+                            left: 2%;
+                            transition: all 0.2s linear;
+                            }
+                        }
+                    }
+                    .bike{
+                        position: relative;
+                        width: 5%;
+                        height: 50px;
+                        transition: all 0.4s linear;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 0%;
+                            left: 0%;
+                            background: linear-gradient(to right, rgb(211, 130, 18),rgb(168, 50, 121));
+                        }
+                        &::after{
+                            content: "\f206";
+                            font-family: FontAwesome;
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            bottom: 57%;
+                            left: 32%;
+                            font-size: 2.5ch;
+                            color: rgb(136, 22, 22);
+                            transition: all 0.6s linear;
+                        }
+                    }
+                    .downContent{
+                        width: 70%;
+                        padding-top: 3%;
+                    }
+                    &:hover .headerContent h1:before{
+                        top: -18%;
+                    }
+                    &:hover .bike{
+                        width: 30%;
+                    }
+                    &:hover .bike:after{
+                        left: 88%;
+                    }
+                }
+            }
+            .col-md-4{
+                text-align: center;
+                .myCard{
+                    transition: all 0.4s linear;
+                    padding-top: 6%;
+                    margin-top: 8%;
+                    .icon{
+                    position: relative;
+                    margin: 0 auto;
+                    border-top: 1px solid rgb(136, 22, 22);
+                    border-bottom: 1px solid rgb(136, 22, 22);
+                    width: 50%;
+                    margin-bottom: 8%;
+                    .fontAwesomeIcon{
+                        padding-top: 10%;
+                        padding-bottom: 10%;
+                        position: relative;
+                            i{
+                            margin-top: 8%;
+                            margin-bottom: 8%;
+                            font-size: 8ch;
+                            color: rgb(136, 22, 22);
+                            }
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 0.5%;
+                                height: 14px;
+                                background-color: #881616;
+                                top: -1%;
+                                left: 0%;
+                                transition: all 0.4s linear;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                width: 0.5%;
+                                height: 14px;
+                                background-color: #881616;
+                                top: -1%;
+                                right: 0%;
+                            }
+                        }  
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 0.5%;
+                            height: 14px;
+                            background-color: #881616;
+                            bottom: -1%;
+                            left: 0%;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 0.5%;
+                            height: 14px;
+                            background-color: #881616;
+                            bottom: -1%;
+                            right: 0%;
+                            transition: all 0.4s linear;
+                        }
+                    }
+                    .mainContent{
+                        h1{
+                            font-size: 2.5ch;
+                        }
+                    }
+                    .donwContent{
+                        margin: 0 auto;
+                        padding-top: 8%;
+                        padding-bottom: 8%;
+                        width: 70%;
+                    }
+                    padding-bottom: 5%;
+                }
+                .secondCard{
+                    box-shadow: -2px 2px 14px 3px #888888;
+                }
+                &:hover .firstCard .icon:after{
+                    height: 160px;
+                }
+                &:hover .firstCard .icon .fontAwesomeIcon:before{
+                    height: 160px;
+                } 
+                &:hover .firstCard{
+                box-shadow: -2px 2px 14px 3px #888888;
+                }
+                &:hover .secondCard .icon:after{
+                    height: 160px;
+                }
+                &:hover .secondCard .icon .fontAwesomeIcon:before{
+                    height: 160px;
+                } 
+                &:hover .thirdCard .icon:after{
+                    height: 160px;
+                }
+                &:hover .thirdCard .icon .fontAwesomeIcon:before{
+                    height: 160px;
+                } 
+                &:hover .thirdCard{
+                box-shadow: -2px 2px 14px 3px #888888;
+                }
+            }
+        }
+    }
+}

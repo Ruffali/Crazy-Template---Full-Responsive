@@ -1,0 +1,72 @@
+body{
+    overflow-x: hidden;
+}
+#footer{
+    background-color: black;
+    .row{
+        .col-md-12{
+            .blackSide{
+                padding-top: 5%;
+                text-align: center;
+                ul{
+                    li{
+                        display: inline-block;
+                        background: white;
+                        border-radius: 50%;
+                        width: 3%;
+                        height: 44px;
+                        line-height: 44px;
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+                        i{
+                            font-size: 2ch;
+                            color: black;
+                            text-decoration: none;
+                            transition: all 0.4s ease;
+                        }
+                        &:hover{
+                            background: $myColorRGB;
+                        }
+                         &:hover i{
+                            color: white;
+                        }
+                        margin-left: 1%;
+                        margin-right: 1%;
+                    }
+                }
+                p{
+                    padding-top: 2%;
+                    color: white;
+                }
+                .byMe{
+                    padding-top: 2%;
+                    padding-bottom: 3%;
+                    h1{
+                        font-size: 2ch;
+                        font-weight: 200;
+                        color: white;
+                        span{
+                            i{
+                                padding: 0.5%;
+                                animation: heartAnimation 2s infinite linear;
+                                transition: all 0.8s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes heartAnimation {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}

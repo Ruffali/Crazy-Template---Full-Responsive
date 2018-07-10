@@ -1,0 +1,49 @@
+#up{
+    color: white;
+    background: black;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-align: center;
+    height: 41px;
+    width: 2.5%;
+    line-height: 41px;
+    cursor: pointer;
+    z-index: 20;
+    // display: none;
+    .up{
+        transition: all 0.4s ease-in;
+        animation: arrowTopAnimation 1s infinite linear;
+    }
+    &:hover .up{
+        color: rgb(214, 66, 66);
+        animation: arrowTopFastAnimation 0.6s infinite linear;
+    }
+}
+@keyframes arrowTopAnimation {
+    0% {
+        margin-top: 0%;
+    }
+
+    50% {
+        margin-top: -10%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+@keyframes arrowTopFastAnimation {
+    0% {
+        margin-top: 0%;
+        color: rgb(214, 66, 66);
+    }
+
+    50% {
+        margin-top: -10%;
+        color: white;
+    }
+    100%{
+        margin-top: 0%;
+        color: rgb(214, 66, 66);
+    }
+}
